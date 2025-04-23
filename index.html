@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weaver's 2024-25 Accommodation Log</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background: #dde1e7;
+      text-align: center;
+    }
+
+    .content {
+      width: 360px;
+      background: #dde1e7;
+      border-radius: 10px;
+      padding: 30px 25px;
+      box-shadow: -3px -3px 7px #ffffff73,
+                  2px 2px 5px rgba(94, 104, 121, 0.288);
+    }
+
+    .content .text {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .field {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin-top: 20px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      height: 100%;
+      padding-left: 45px;
+      padding-right: 40px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+      background: #dde1e7;
+      color: #595959;
+      box-shadow: inset 2px 2px 5px #babecc,
+                  inset -5px -5px 10px #ffffff73;
+      appearance: none;
+    }
+
+    .field span {
+      position: absolute;
+      width: 50px;
+      line-height: 50px;
+      color: #595959;
+      left: 10px;
+      top: 0;
+    }
+
+    .field .dropdown-icon {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #595959;
+    }
+
+    .field label {
+      position: absolute;
+      left: 45px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #666;
+      transition: 0.3s ease;
+    }
+
+    .field input:focus ~ label,
+    .field input:not(:placeholder-shown) ~ label,
+    .field select:valid ~ label {
+      opacity: 0;
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      margin-top: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      background: #dde1e7;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 2px 2px 5px #babecc,
+                  -5px -5px 10px #ffffff73;
+    }
+
+    button:focus {
+      color: #3498db;
+      box-shadow: inset 2px 2px 5px #babecc,
+                  inset -5px -5px 10px #ffffff73;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="text">Weaver's 2024-25 Accommodation Log</div>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScX4LTZHSd17_dJG9Jf7rIKNdorWvlM6BDOYBt_E8AwOIufXg/formResponse" method="POST">
+      
+      <div class="field">
+        <span class="fas fa-user"></span>
+        <input type="text" name="entry.1302852729" placeholder=" " required />
+        <label>First Name</label>
+      </div>
+
+      <div class="field">
+        <span class="fas fa-user"></span>
+        <input type="text" name="entry.1022988475" placeholder=" " required />
+        <label>Last Name</label>
+      </div>
+
+      <div class="field">
+        <span class="fas fa-clock"></span>
+        <select name="entry.1648254452" required>
+          <option value="" disabled selected hidden></option>
+          <option>2A Marketing</option>
+          <option>3A Personal Finance</option>
+          <option>4A Personal Finance</option>
+          <option>1B Intro to Computer Programming</option>
+          <option>3B Intro to Computer Programming</option>
+          <option>4B Personal Finance</option>
+        </select>
+        <i class="fas fa-chevron-down dropdown-icon"></i>
+        <label>Class Period</label>
+      </div>
+
+      <div class="field">
+        <span class="fas fa-tasks"></span>
+        <select name="entry.1367339777" required>
+          <option value="" disabled selected hidden></option>
+          <option>Test/Quiz</option>
+          <option>Writing Response</option>
+          <option>Classwork</option>
+          <option>Homework</option>
+          <option>Project</option>
+          <option>Office Hours</option>
+        </select>
+        <i class="fas fa-chevron-down dropdown-icon"></i>
+        <label>Assignment Type</label>
+      </div>
+
+      <div class="field">
+        <span class="fas fa-check-double"></span>
+        <select name="entry.121862058" required>
+          <option value="" disabled selected hidden></option>
+          <option>Extended Time</option>
+          <option>Small Group Testing/Completion</option>
+          <option>Copy of Notes</option>
+          <option>Oral Delivery</option>
+          <option>Paper test in place of electronic</option>
+          <option>Individual/small group review of content</option>
+          <option>No accommodations used</option>
+          <option>Electronic submission (instead of written)</option>
+        </select>
+        <i class="fas fa-chevron-down dropdown-icon"></i>
+        <label>Accommodations</label>
+      </div>
+
+      <div class="field">
+        <span class="fas fa-comment"></span>
+        <input type="text" name="entry.635217782" placeholder=" " />
+        <label>Additional Comments</label>
+      </div>
+
+      <div class="field">
+        <span class="fas fa-pen"></span>
+        <input type="text" name="entry.929421921" placeholder=" " required />
+        <label>Electronic Signature</label>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
